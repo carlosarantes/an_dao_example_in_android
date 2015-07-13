@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Inflate" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Model: " />
+
+    <EditText
+        android:id="@+id/et_carname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year: " />
+
+    <EditText
+        android:id="@+id/et_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+    </EditText>
+    
+    <TextView
+        android:id="@+id/tv_factory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Factory: " />
+
+    <EditText
+        android:id="@+id/et_factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:text="Confirm" />
+
+    <TextView
+        android:id="@+id/tv_allCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All my cars. Click in a car to delete it: " />
+
+    <ListView
+        android:id="@+id/list_allCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+</LinearLayout>
